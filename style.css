@@ -691,7 +691,7 @@ footer {
     align-items: flex-start;
     position: relative;
     color: white;
-    overflow: hidden;
+    overflow: visible;
 }
   .hero-image img {
     display: none;
@@ -736,7 +736,7 @@ footer {
     font-size: 14px;
 }
 .scroll-indicator{
-    bottom: 50px;
+    bottom: -20px;
 }
   /* HERO STATS */
   .hero-stats {
