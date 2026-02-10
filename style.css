@@ -69,18 +69,6 @@ nav.scrolled {
 }
 
 
-/* .hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: white;
-  margin: 4px 0;
-} */
 
 /* SECTIONS */
 .section {
@@ -94,14 +82,14 @@ nav.scrolled {
 }
 
 .hero-section {
-  min-height: 100vh;
+  min-height: auto;
   
   background-color: black;
   display: flex;
   align-items: center;
   position: relative;
   color: white;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-container {
@@ -199,7 +187,7 @@ nav.scrolled {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 20px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 28px;
@@ -540,7 +528,7 @@ font-size: 36px;
 }
 
 .stat-box {
-  background: #111;
+  background: #1d1919;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -619,6 +607,10 @@ footer {
   background: #111;
   color: white;
   text-align: center;
+}
+.dev-credit {
+  font-size: 13px;
+  color: #777;
 }
 
 /* RESPONSIVE */
@@ -820,7 +812,7 @@ footer {
 
   .about h3 {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
   }
 
   .about p {
