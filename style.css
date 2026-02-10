@@ -694,7 +694,7 @@ footer {
     overflow: hidden;
 }
   .hero-image img {
-    max-width: 220px;
+    display: none;
   }
 
   .hero-content h1 {
