@@ -33,3 +33,21 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 courseCards.forEach(card => observer.observe(card));
+// Fix back button issue for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      e.preventDefault();
+
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+
+      // Replace history instead of adding new entry
+      history.replaceState(null, '', targetId);
+    }
+  });
+});
